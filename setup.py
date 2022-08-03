@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from io import open
 
 setup(
-    name='knockknock',
+    name='knockknock_telegram',
     version='0.1.8.1',
     description='Be notified when your training is complete with only two additional lines of code',
     long_description=open('README.md', 'r', encoding='utf-8').read(),
