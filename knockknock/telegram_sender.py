@@ -7,7 +7,7 @@ import telegram
 
 DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
-def telegram_sender(token: str, chat_id: int):
+def telegram_sender(token: str, chat_id: int,chat_id_fail: int):
     """
     Telegram sender wrapper: execute func, send a Telegram message with the end status
     (sucessfully finished or crashed) at the end. Also send a Telegram message before
@@ -89,7 +89,7 @@ def telegram_sender(token: str, chat_id: int):
                             "Traceback:",
                             '%s' % traceback.format_exc()]
                 text = '\n'.join(contents)
-                bot.send_message(chat_id=chat_id, text=text)
+                bot.send_message(chat_id=chat_id_fail, text=text)
                 raise ex
 
         return wrapper_sender
