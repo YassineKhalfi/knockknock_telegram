@@ -7,7 +7,7 @@ setup(
     description='Be notified when your training is complete with only two additional lines of code',
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
-    url='http://github.com/huggingface/knockknock',
+    url='http://github.com/YassineKhalfi/knockknock_telegram',
     author='Victor SANH',
     author_email='victorsanh@gmail.com',
     license='MIT',
